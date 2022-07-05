@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "name": "Launch QuickLinkJS WebDoc's on a localhost",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://127.0.0.1:3520/index.html",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}

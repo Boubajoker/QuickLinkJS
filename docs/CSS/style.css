@@ -1,0 +1,51 @@
+:host,
+:root {
+    --quicklinkjs-primary-color: rgba(255, 255, 255, 0.877);
+    --quicklinkjs-secondary-color: rgb(21, 16, 45);
+    --quicklinkjs-third-color: rgb(0, 0, 0, 0.800);
+}
+body {
+    font-family: Arial;
+    background-color: var(--quicklinkjs-primary-color);
+}
+h1, h2 {
+    font-weight: 100;
+    text-shadow: 0px 0px 5px var(--quicklinkjs-secondary-color);
+}
+a {
+    text-decoration: none;
+    text-shadow: 0px 0px 5px var(--quicklinkjs-secondary-color);
+}
+a:focus {
+    text-decoration: underline;
+}
+footer {
+    background: var(--quicklinkjs-third-color);
+    border-radius: 15px;
+    height: 200px;
+    width: 100%;
+}
+li::marker {
+    content: url(../assets/img/custom_li_marker.svg);
+}
+.code {
+    background: rgb(0, 0, 0, 0.570);
+    width: fit-content;
+    border-radius: 5px;
+    color: var(--quicklinkjs-secondary-color);
+}
+.credits-paragraph {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(110, 107, 107);
+}
+::-webkit-scrollbar {
+    background: rgb(0, 0, 0, 0);
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0, 0.570);
+    border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color:rgb(0, 0, 0, 0.780);
+}
