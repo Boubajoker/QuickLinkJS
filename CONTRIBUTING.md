@@ -1,3 +1,3 @@
 # Contributing
 
-For the moment you can't contribute but comming soon !! :punch:
+For any contributions / modification go to [`./docs/module/dist`](docs/module/dist.js).

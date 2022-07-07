@@ -13,14 +13,14 @@ To apply the QuickLinkJS to your website please follow the steps behavior:
 -  Copy this html code to your clipboard: 
 
 ```html
-<script src="https://boubajoker.github.io/QuickLinkJS/src/dist.js"></script>
+<script src="https://boubajoker.github.io/QuickLinkJS/module/dist.js"></script>
 ```
 
 - Paste it to your html file.
 
 # Use QuickLinkJS
 
-To get a quick start with QuickLinkJS type this basic code to create a very-smiple shortcut:
+To get a quick start with QuickLinkJS type this basic code to create a very smiple shortcut:
 
 ```js
 let quicklinkjs = new QuickLinkJS();

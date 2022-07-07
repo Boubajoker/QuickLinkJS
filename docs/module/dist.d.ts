@@ -43,4 +43,7 @@ class QuickLinkJS {
      * **NOTE: THE MODULE ADD'S AUTOMATICLY THE `?Link=` TEXT TO YOUR CODE, BUT THE USER HAS TO TYPE THE ENTIRE TEXT WITH THE `?Link=` TEXT !**
      */
     init_search(shortcut_name: string, redirect_file_name: string): () => QuickLinkJS;
+
+    //@beta except_host
+    except_host(host: string): ()=> QuickLinkJS;
 };

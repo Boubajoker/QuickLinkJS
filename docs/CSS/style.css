@@ -28,6 +28,27 @@ footer {
 li::marker {
     content: url(../assets/img/custom_li_marker.svg);
 }
+table {
+    border-spacing: 2px;
+    background-color: rgba(0, 0, 0, 0.274);
+}
+td {
+    padding-left: 40px;
+}
+summary {
+    font-weight: bold;
+}
+tt {
+    background: rgb(0, 0, 0, 0.570);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 14.5px;
+    border-width: 15px;
+    border-color: rgb(0, 255, 0);
+}
+.main-title {
+    text-align: center;
+}
 .code {
     background: rgb(0, 0, 0, 0.570);
     width: fit-content;
