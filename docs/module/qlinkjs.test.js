@@ -5,7 +5,11 @@
     * This is a QuickLinkJS test file, to test the module.
 ---------------------------------------------------------------- */
 
-let quicklinkjs = new QuickLinkJS();
+const quicklinkjs = new QuickLinkJS();
 
 quicklinkjs.init('test', "../");
-quicklinkjs.init_search('test', '../');
+quicklinkjs.init('hello_qlinkjs', '../');
+
+quicklinkjs.init_search('test', '../#table_of_content');
+quicklinkjs.init_search('hello_qlinkjs', '../#table_of_content');
+quicklinkjs.init_custom_search('test', '../#table_of_content', 'key');

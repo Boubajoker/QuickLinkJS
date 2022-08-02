@@ -1,0 +1,52 @@
+body {
+    font-family: Arial;
+    background-color: var(--quicklinkjs-primary-color);
+}
+h2 {
+    font-weight: 100;
+    background: var(--quicklinkjs-secondary-color);
+    color: rgb(210, 160, 95);
+    border-radius: 5px;
+    width: fit-content;
+}
+a {
+    text-decoration: underline;
+    color: rgb(49 109 202);
+}
+a:focus {
+    text-decoration: underline dashed;
+}
+footer {
+    background: var(--quicklinkjs-third-color);
+    border-radius: 15px;
+    height: 200px;
+    width: 100%;
+    margin-top: 550px;
+}
+li::marker {
+    content: url(../assets/img/custom_marker.svg);
+}
+table {
+    background-color: var(--quicklinkjs-fifth-color);
+    width: fit-content;
+    border-radius: 10px;
+}
+td {
+    background: var(--quicklinkjs-secondary-color);
+    padding-left: 4px;
+    text-align: center;
+    color: var(--quicklinkjs-primary-color);
+    border-radius: 5px;
+}
+summary {
+    cursor: pointer;
+    text-align: left;    
+    font-weight: bold;
+    width: fit-content;
+}
+summary::marker {
+    color: var(--quicklinkjs-fifth-color);
+}
+summary:focus {
+    transition: opacity ease 0.5s;
+}

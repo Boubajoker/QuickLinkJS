@@ -23,7 +23,7 @@ To apply the QuickLinkJS to your website please follow the steps behavior:
 To get a quick start with QuickLinkJS type this basic code to create a very smiple shortcut:
 
 ```js
-let quicklinkjs = new QuickLinkJS();
+const quicklinkjs = new QuickLinkJS();
 
 quicklinkjs.init('test', "../");
 ```

@@ -1,26 +1,39 @@
-let html_code = document.querySelector('#html_code');
-let js_code = document.querySelector('#js_code');
-let details = document.querySelector('details');
-let table = document.querySelector('table')
+const html_code = document.querySelector('#html_code');
+const js_code = document.querySelector('#js_code');
+const copy_html_code = document.querySelector('#copy_html_code');
+const copy_js_code = document.querySelector('#copy_js_code');
+const details = document.querySelector('details');
+const table = document.querySelector('table');
+const footer = document.querySelector('footer');
 
-js_code.innerText = "let quicklinkjs = new QuickLinkJS();\n\nquicklinkjs.init('test', \"../\");"
+js_code.innerText = "const quicklinkjs = new QuickLinkJS();\n\nquicklinkjs.init('test', \"../\");";
 html_code.innerText = "<script src=\"https://boubajoker.github.io/QuickLinkJS/src/dist.js\"></script>";
 
-details.addEventListener('click', ()=>{
-    table.style.display = "block";
-    if (details.open) {
-        table.style.display = "none";
-    };
+copy_html_code.addEventListener('click', ()=>{
+    navigator.clipboard.writeText('<script src=\"https://boubajoker.github.io/QuickLinkJS/src/dist.js\"></script>');
 });
 
-document.addEventListener('keydown', (e)=>{
-    e.preventDefault();
+copy_js_code.addEventListener('click', ()=>{
+    navigator.clipboard.writeText('const quicklinkjs = new QuickLinkJS();\n\nquicklinkjs.init(\'test\', \"../\");');
+});
 
-    if  (
+document.addEventListener('keydown', (e) => {
+    e.preventDefault();
+    console.log(`[INFO]: typed \`${e.key}\``);
+
+    if (
         e.key.toLocaleLowerCase() === "d"
         && e.altKey
         && e.ctrlKey
     ) {
-        window.location = "./src/";
-    }
+        window.location = "./module/";
+    };
+
+    if (
+        e.key.toLocaleLowerCase() === "d"
+        && e.altKey
+        && e.metaKey
+    ) {
+        document.body.style.animation = "dynamic 5s ease-in-out infinite";
+    };
 });

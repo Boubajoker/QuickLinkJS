@@ -1,0 +1,8 @@
+:host,
+:root {
+    --quicklinkjs-primary-color: rgba(255, 255, 255, 0.877);
+    --quicklinkjs-secondary-color: rgb(21, 16, 45);
+    --quicklinkjs-third-color: rgb(0, 0, 0, 0.800);
+    --quicklinkjs-fourth-color: rgb(0, 0, 0, 0.570);
+    --quicklinkjs-fifth-color: rgb(110, 107, 107);
+}

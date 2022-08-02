@@ -1,72 +1,70 @@
-:host,
-:root {
-    --quicklinkjs-primary-color: rgba(255, 255, 255, 0.877);
-    --quicklinkjs-secondary-color: rgb(21, 16, 45);
-    --quicklinkjs-third-color: rgb(0, 0, 0, 0.800);
-}
-body {
-    font-family: Arial;
-    background-color: var(--quicklinkjs-primary-color);
-}
-h1, h2 {
-    font-weight: 100;
-    text-shadow: 0px 0px 5px var(--quicklinkjs-secondary-color);
-}
-a {
-    text-decoration: none;
-    text-shadow: 0px 0px 5px var(--quicklinkjs-secondary-color);
-}
-a:focus {
-    text-decoration: underline;
-}
-footer {
-    background: var(--quicklinkjs-third-color);
-    border-radius: 15px;
-    height: 200px;
-    width: 100%;
-}
-li::marker {
-    content: url(../assets/img/custom_li_marker.svg);
-}
-table {
-    border-spacing: 2px;
-    background-color: rgba(0, 0, 0, 0.274);
-}
-td {
-    padding-left: 40px;
-}
-summary {
-    font-weight: bold;
-}
-tt {
-    background: rgb(0, 0, 0, 0.570);
-    border-radius: 5px;
-    color: rgb(255, 255, 255);
-    font-size: 14.5px;
-    border-width: 15px;
-    border-color: rgb(0, 255, 0);
-}
+@import url(./vars.css);
+@import url(./elements.css);
+
 .main-title {
+    text-shadow: none;
     text-align: center;
+    background: var(--quicklinkjs-secondary-color);
+    color: rgb(210, 160, 95);
+    border-radius: 10px;
+    font-size: 35px;
+    font-weight: 100;
 }
-.code {
-    background: rgb(0, 0, 0, 0.570);
+.desc {
+    background-color: transparent;
+    transition: background-color ease-in-out 0.3s;
     width: fit-content;
     border-radius: 5px;
-    color: var(--quicklinkjs-secondary-color);
+}
+.desc:hover {
+    background-color: rgb(0, 147, 0, 0.580);
+}
+.code {
+    background: var(--quicklinkjs-fourth-color);
+    width: fit-content;
+    border-radius: 5px;
+    font-size: 14.5px;
+    color: rgb(210, 160, 95);
+    font-family: Consolas;
+    margin-bottom: 0px;
+    transition: background-color ease 0.5s, color ease 0.5s;
+}
+.code:hover {
+    background-color: rgb(49 109 202);
+    color: rgb(255, 255, 255);
 }
 .credits-paragraph {
     text-align: center;
     font-weight: bold;
-    color: rgb(110, 107, 107);
+    color: var(--quicklinkjs-fifth-color);
+}
+.copy-btn, .copy-btn-img {
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--quicklinkjs-secondary-color);
+}
+.credits-title {
+    margin-left: 15px;
+    border-radius: 0px 0px 5px 5px;
+    width: 150px;
+    text-align: center;
 }
 ::-webkit-scrollbar {
     background: rgb(0, 0, 0, 0);
 }
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(0, 0, 0, 0.570);
+    background-color: var(--quicklinkjs-fourth-color);
     border-radius: 15px;
 }
 ::-webkit-scrollbar-thumb:hover {
     background-color:rgb(0, 0, 0, 0.780);
+}
+@keyframes dynamic {
+    0% {
+        transform: rotate(0.4deg);
+    } 50% {
+        transform: rotate(-0.4deg);
+    } 100% {
+        transform: rotate(0.4deg);
+    }
 }

@@ -19,11 +19,11 @@ class QuickLinkJS {
      * 
      * **NOTE: THE MODULE ADD'S AUTOMATICLY THE `?` SIGN TO YOUR CODE, BUT THE USER HAS TO TYPE THE ENTIRE TEXT WITH THE `?` SIGN !**
      */
-    constructor (shortcut_name: string=null, redirect_string_name: string=null): () => QuickLinkJS;
+    constructor(shortcut_name: string = null, redirect_string_name: string = null): () => QuickLinkJS;
     /**
      * ## `init` funtion:
      * 
-     * The `init` function has the role to initialize the shortcut 
+     * The `init` function has the role to create a shortcut-url 
      * 
      * @param shortcut_name Type a random text (e.g: `HelloWorld`)
      * 
@@ -35,7 +35,7 @@ class QuickLinkJS {
     /**
      * ## `init_search` function:
      * 
-     * The `init_search` function has the role to create a shortcut-url but with a default `?Link=` text added to the shortcut-url.
+     * The `init_search` function has the role to create a shortcut-url with a default `?Link=` text added to the shortcut-url.
      *  
      * @param shortcut_name Type a random text (e.g: `HelloWorld`)
      * @param redirect_file_name The file to redirect after the user typed the `shortcut_name` in the url bar.
@@ -43,7 +43,13 @@ class QuickLinkJS {
      * **NOTE: THE MODULE ADD'S AUTOMATICLY THE `?Link=` TEXT TO YOUR CODE, BUT THE USER HAS TO TYPE THE ENTIRE TEXT WITH THE `?Link=` TEXT !**
      */
     init_search(shortcut_name: string, redirect_file_name: string): () => QuickLinkJS;
-
-    //@beta except_host
-    except_host(host: string): ()=> QuickLinkJS;
-};
+    /**
+     * ## `init_custom_search` function:
+     * 
+     * The `init_custom_search` function has the role to create a shortcut-url with a custom `key` text added to the shortcut-url.
+     * @param shortcut_name Type a random text (e.g: `HelloWorld`)
+     * @param redirect_file_name The file to redirect after the user typed the `shortcut_name` in the url bar.
+     * @param key_search_name The custom key (e.g: `?search=`) that is added.
+    */
+    init_custom_search(shortcut_name: string, redirect_file_name: string, key_search_name: string): () => QuickLinkJS;
+}
