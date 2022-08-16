@@ -9,6 +9,7 @@
     border-radius: 10px;
     font-size: 35px;
     font-weight: 100;
+    animation: entry 0.5s ease-in;
 }
 .desc {
     background-color: transparent;
@@ -66,5 +67,12 @@
         transform: rotate(-0.4deg);
     } 100% {
         transform: rotate(0.4deg);
+    }
+}
+@keyframes entry {
+    from {
+        opacity: 0.5;
+    } to {
+        opacity: 1;
     }
 }

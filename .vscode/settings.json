@@ -46,7 +46,7 @@
             "italic": false
         },
         {
-            "tag" : "beta",
+            "tag" : "@BETA",
             "color" : "#0753dfab",
             "strikethrough": false,
             "underline": false,

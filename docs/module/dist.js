@@ -1,3 +1,5 @@
+'use strict';
+
 /*----------------------------------------------------------------
     QuickLinkJs Copyright (c) Boubajoker 2022. All right reserved.
     Project under MIT License.
@@ -22,6 +24,10 @@ class QuickLinkJS {
     };
 
     init_custom_search(shortcut_name, redirect_file_name, key_search_name) {
-        if (document.URL === this.base_url + `?${key_search_name}=` + shortcut_name) { window.location = redirect_file_name}
+        if (document.URL === this.base_url + `?${key_search_name}=` + shortcut_name) { window.location = redirect_file_name };
     };
+
+    init_custom_key(shortcut_name, key_name, func) {
+        if (document.URL === this.base_url + `?${key_name}=` + shortcut_name) { func.call() }
+    }
 };
